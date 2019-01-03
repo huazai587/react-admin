@@ -1,32 +1,51 @@
-.App {
+
+.logo{
+  background: #001529;
+  width: 100%;
+  height: 80px;
+  margin: 0;
+  padding: 0;
+}
+.logo img{
+    margin: 30px 0 0 20px;
+    width: 160px;
+    height: 16px;
+}
+.user_name{
+  width:200px;
+  padding-right:60px;
+}
+.el-dropdown-menu__item{
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+.userInfo{
+  margin:0;
+  padding: 0 10px;
+  line-height: 24px!important;
+  text-align: left;
+  font-size: 14px;
+  color:#606266;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.userInfo .createUser{
+  color:#909399;
 }
-
-.App-link {
-  color: #61dafb;
+.c1{
+  margin:0;
+  width: 130px;
+  color:#1EA0FF;
+  text-decoration: none;
 }
+.c1 span{display: block;width: 100%}
+select {  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/*很关键：将默认的select选择框样式清除*/  
+appearance:none;  
+-moz-appearance:none;  
+-webkit-appearance:none;  
+
+/*在选择框的最右侧中间显示小箭头图片*/  
+background: url("http://ourjs.github.io/static/2015/arrow.png") no-repeat scroll right center transparent;  
+
+padding-right: 14px;  
+}  
+select::-ms-expand { display: none; }  
